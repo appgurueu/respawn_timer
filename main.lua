@@ -111,7 +111,7 @@ minetest.register_on_mods_loaded(function()
     end
     -- HACK allow revoking interact
     minetest.registered_privileges.interact.give_to_singleplayer = false
-    function ghostify(player)
+    local function ghostify(player)
         local name = player:get_player_name()
         local player_props = player:get_properties()
         players[name] = {
