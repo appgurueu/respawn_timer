@@ -8,6 +8,8 @@ Depends on [`modlib`](https://github.com/appgurueu/modlib). Licensed under the M
 
 ## Screenshot
 
+![Screenshot](screenshot.png)
+
 ## Links
 
 * [GitHub](https://github.com/appgurueu/respawn_timer) - sources, issue tracking, contributing
