@@ -14,7 +14,7 @@ Depends on [`modlib`](https://github.com/appgurueu/modlib). Licensed under the M
 
 * [GitHub](https://github.com/appgurueu/respawn_timer) - sources, issue tracking, contributing
 * [Discord](https://discordapp.com/invite/ysP74by) - discussion, chatting
-* [Minetest Forum](https://forum.minetest.net/viewtopic.php?f=9&t=<!--TODO -->) - (more organized) discussion
+* [Minetest Forum](https://forum.minetest.net/viewtopic.php?f=9&t=25749) - (more organized) discussion
 * [ContentDB](https://content.minetest.net/packages/LMD/respawn_timer) - releases (cloning from GitHub is recommended)
 
 ## Features
