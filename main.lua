@@ -37,9 +37,12 @@ minetest.register_entity(corpse, {
         local bone_names = bone_names_by_model[self._player:get_properties().mesh] or bone_names_by_model.default
         for _, bone_name in pairs(bone_names) do
             local position, rotation = self._player:get_bone_position(bone_name)
-            local corpse_pos, corpse_rot = self.object:get_bone_position(bone_name)
-            if not (vector.equals(position, corpse_pos) and vector.equals(rotation, corpse_rot)) then
-                self.object:set_bone_position(bone_name, position, rotation)
+            if not (vector.equals(position, vector.new(0, 0, 0)) and vector.equals(rotation, vector.new(0, 0, 0))) then
+                -- HACK as get_bone_position on the object somehow leads to an alteration
+                local corpse_pos, corpse_rot = self.object:get_bone_position(bone_name)
+                if not (vector.equals(position, corpse_pos) and vector.equals(rotation, corpse_rot)) then
+                    self.object:set_bone_position(bone_name, position, rotation)
+                end
             end
         end
         self.object:set_properties{collisionbox = self._player.collisionbox}
