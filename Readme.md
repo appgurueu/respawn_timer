@@ -4,7 +4,7 @@ Forces players to wait a set duration before respawning.
 
 ## About
 
-Depends on [`modlib`](https://github.com/appgurueu/modlib). Licensed under the MIT License. Written by Lars Mueller aka LMD or appguru(eu).
+Depends on [`modlib`](https://github.com/appgurueu/modlib) and [`hud_timers`](https://github.com/appgurueu/hud_timers). Licensed under the MIT License. Written by Lars Mueller aka LMD or appguru(eu).
 
 ## Screenshot
 
