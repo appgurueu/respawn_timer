@@ -1,9 +1,6 @@
 local modname = minetest.get_current_modname()
-timer = {
-    name = "Respawn",
-    duration = 5,
-    color = "FF00FF"
-}
+conf = modlib.mod.configuration()
+local timer = conf.timer
 bone_names_by_model = {
     default = {"Head", "Body", "Arm_Right", "Arm_Left", "Leg_Right", "Leg_Left"}
 }

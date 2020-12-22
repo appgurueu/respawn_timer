@@ -36,12 +36,32 @@ Relies on multiple hacks and thus imposes the following limitations on other mod
   * `respawn_timer.bone_names_by_model["<filename>.<ext>"] = { "Bone_1", "Bone_2", ... }` including standard bone names if used
   * If both bone position and rotation are set to `{ x = 0, y = 0, z = 0 }`, the bone will be ignored
 
-Respawning can be done using `respawn_timer.respawn(player_ref)`, the timer can be modified by altering the exposed table
+Respawning can be done using `respawn_timer.respawn(player_ref)`.
 
-```lua
-respawn_timer.timer = {
-    name = "Respawn",
-    duration = 5,
-    color = "FF00FF"
-}
-```
+## Configuration
+
+<!--modlib:conf:2-->
+### `timer`
+#### `color`
+Timer fill color as hex string
+
+* Type: string
+* Default: `FF00FF`
+* &gt; 000000
+* &lt; FFFFFF
+
+#### `duration`
+Timer duration in seconds
+
+* Type: number
+* Default: `5`
+* &gt; 0
+* &lt; 6000
+
+#### `name`
+Timer caption
+
+* Type: string
+* Default: `Respawn`
+
+<!--modlib:conf-->
