@@ -47,16 +47,16 @@ Timer fill color as hex string
 
 * Type: string
 * Default: `FF00FF`
-* &gt; 000000
-* &lt; FFFFFF
+* &gt;= 000000
+* &lt;= FFFFFF
 
 #### `duration`
 Timer duration in seconds
 
 * Type: number
 * Default: `5`
-* &gt; 0
-* &lt; 6000
+* &gt;= 0
+* &lt;= 6000
 
 #### `name`
 Timer caption
