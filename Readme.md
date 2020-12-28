@@ -42,7 +42,9 @@ Respawning can be done using `respawn_timer.respawn(player_ref)`.
 
 <!--modlib:conf:2-->
 ### `timer`
+
 #### `color`
+
 Timer fill color as hex string
 
 * Type: string
@@ -51,6 +53,7 @@ Timer fill color as hex string
 * &lt;= FFFFFF
 
 #### `duration`
+
 Timer duration in seconds
 
 * Type: number
@@ -59,6 +62,7 @@ Timer duration in seconds
 * &lt;= 6000
 
 #### `name`
+
 Timer caption
 
 * Type: string
